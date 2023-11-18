@@ -1,14 +1,12 @@
 @import './base.scss';
-
-// $family: 'Montserrat', sans-serif;
-// @use "vuetify" with ($body-font-family: $family);
+@import './variables.scss';
 
 :root {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserat-font;
 }
 
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $montserat-font;
   }
 }

@@ -23,7 +23,28 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    strategy: 'no_prefix',
+    lazy: true,
+    langDir: 'locales',
+    locales: [
+      {
+        code: 'en-US',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en.json'
+      },
+      {
+        code: 'ua-UA',
+        iso: 'ua-UA',
+        name: 'Ukrainian',
+        file: 'ua.json'
+      },
+    ],
+    defaultLocale: 'en-US',
+  },
   build: {
     transpile: ['vuetify'],
   },
@@ -93,8 +114,10 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        { rel:"preconnect", href:"https://fonts.gstatic.com", crossorigin: '' },
+        { rel: "preconnect", href: "https://fonts.googleapis.com"},
+        { rel: "preconnect", href:"https://fonts.gstatic.com", crossorigin: '' },
         { rel: "stylesheet", href:"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,300&display=swap" },
+        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" },
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "canonical", href: url },
       ]
