@@ -33,13 +33,13 @@ export default defineNuxtConfig({
       {
         code: 'en-US',
         iso: 'en-US',
-        name: 'English',
+        name: 'EN',
         file: 'en.json'
       },
       {
         code: 'ua-UA',
         iso: 'ua-UA',
-        name: 'Ukrainian',
+        name: 'UA',
         file: 'ua.json'
       },
     ],
@@ -52,6 +52,7 @@ export default defineNuxtConfig({
   css: [
     'normalize.css/normalize.css',
     '@/assets/scss/main.scss',
+    'vuetify/styles'
   ],
   app: {
     head: {

@@ -6,7 +6,7 @@ export const light = {
   colors: {
     background: "#FFFFFF",
     surface: "#FFFFFF",
-    primary: twColors.indigo[600],
+    primary: twColors.lime[300],
     secondary: twColors.purple[600],
     error: twColors.red[500],
     info: twColors.blue[500],
