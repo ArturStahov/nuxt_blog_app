@@ -19,9 +19,11 @@
 </template>
 
 <script setup>
+import { useI18n } from '#imports'
+const { locale } = useI18n();
 
 const { id } = useRoute().params;
-const uri = `/api/description?category=firs&id=${id}`;
+const uri = `/api/description?category=firs&id=${id}&locale=${locale.value}`;
 const { data } = await useFetch(uri, { key: id });
 console.log('data:>>>>', data)
 if (!data.value) {

@@ -11,7 +11,8 @@
 <style lang="scss" scoped>
 @import "@/assets/scss/variables.scss";
 .logo {
-  font-size: 3rem;
+  margin: 0;
+  font-size: 1rem;
   color: $colorLogo;
   user-select: none;
   transition: color 0.4s ease-in;

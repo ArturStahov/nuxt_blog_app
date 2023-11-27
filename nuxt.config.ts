@@ -25,6 +25,10 @@ export default defineNuxtConfig({
     },
     '@nuxtjs/i18n',
   ],
+   //  Add the redirect
+   routeRules: {
+     "/home": { redirect: "/" },
+   },
   i18n: {
     strategy: 'no_prefix',
     lazy: true,
@@ -37,13 +41,14 @@ export default defineNuxtConfig({
         file: 'en.json'
       },
       {
-        code: 'ua-UA',
-        iso: 'ua-UA',
+        code: 'uk-UA',
+        iso: 'uk-UA',
         name: 'UA',
         file: 'ua.json'
       },
     ],
     defaultLocale: 'en-US',
+    detectBrowserLanguage: false,
   },
   build: {
     transpile: ['vuetify'],

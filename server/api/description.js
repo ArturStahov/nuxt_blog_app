@@ -1,12 +1,12 @@
 export default defineEventHandler(async (event) => {
 
-  const { category, id } = getQuery(event); // get query
+  const { category, id, locale } = getQuery(event); // get query
 
   // const { some } = await readBody(event);
 
   const { postsDbPath } = useRuntimeConfig();
 
-  console.log('server log description >>> ', category, id, postsDbPath);
+  console.log('server log description >>> ', category, id, postsDbPath, locale);
 
 
 

@@ -11,7 +11,7 @@
 
 <script setup>
 definePageMeta({
-  layout: 'cutom'
+  layout: 'custom'
 });
 
 const { data } = await useFetch('/api/posts?category=firs', {

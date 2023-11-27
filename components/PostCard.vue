@@ -2,11 +2,6 @@
   <div class="post-card">
     <NuxtLink :to="`posts/${postCardItem.id}`">
       {{ postCardItem.title }}
-      <VTextField 
-        :rules="[ruleRequired, rulePassLen]" 
-        v-model="password" 
-        prepend-inner-icon="fluent:password-20-regular"
-        id="password" name="password" type="password" />
     </NuxtLink>
   </div>
 </template>

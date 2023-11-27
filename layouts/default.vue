@@ -57,7 +57,7 @@ onBeforeUnmount(() => {
 @import "@/assets/scss/variables.scss";
 
 .header {
-  height: 100px;
+  height: 125px;
   background-color: $colorHeaderBackground;
   position: sticky;
   top: 0;
